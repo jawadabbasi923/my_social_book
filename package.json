@@ -1,0 +1,16 @@
+{
+  "name": "my_social_book",
+  "version": "1.0.0",
+  "description": "My Social Book App",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
