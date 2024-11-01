@@ -3,12 +3,14 @@ import connectDB from './src/core/connection/mongo_connection.js';
 import dotenv from 'dotenv';
 import staticRoute from './src/core/router/static_routes.js';
 import userRouter from './src/core/router/user_route.js'
+import logRequest from './src/core/helper/logger.js'
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+app.use(logRequest);
 
 connectDB();
 
